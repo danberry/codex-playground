@@ -737,6 +737,8 @@ paths:
 components:
   schemas:
     Order:
+      required:
+        - id
       type: object
       properties:
         id:
@@ -767,6 +769,8 @@ components:
       xml:
         name: order
     Category:
+      required:
+        - id
       type: object
       properties:
         id:
@@ -779,6 +783,8 @@ components:
       xml:
         name: category
     User:
+      required:
+        - id
       type: object
       properties:
         id:
@@ -811,6 +817,8 @@ components:
       xml:
         name: user
     Tag:
+      required:
+        - id
       type: object
       properties:
         id:
@@ -822,6 +830,7 @@ components:
         name: tag
     Pet:
       required:
+        - id
         - name
         - photoUrls
       type: object
